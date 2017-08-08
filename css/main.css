@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Play|Poiret+One');
+
+h1{
+    padding: 50px 0 50px 0;
+}
+
+h1,h2{
+    font-family: 'Poiret One', sans-serif;
+}
+
+h3,h4,h5,h6,p,label{
+    font-family: 'Play', sans-serif;
+}
+p{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+header {
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-image: url("../img/main1.jpg");
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header li{
+    padding-right: 20px;
+}
+
+header a{
+    color: white;
+    padding-right: 20px;
+}
+
+header a:hover{
+    color: #d21927;
+}
+
+section{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.bot_om button{
+    margin-bottom: 50px;
+}
+
+
+#midnav{
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    padding-top: 45px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+A:link {
+    text-decoration: none;
+    color: white;
+}
+
+.features{
+    background-color: #FFF3E3;
+    color: black;
+}
+
+.features p{
+    margin-bottom: 50px;
+}
+
+#discount{
+    background-image: url("../img/percent.png");
+    background-size: contain;
+}
+
+#support{
+    background-image: url("../img/ques1.png");
+    background-size: contain;
+}
+
+#bonus{
+    background-image: url("../img/gift.png");
+    background-size: contain;
+}
+
+.backs{
+    background-color: #d21927;
+    color: white;
+}
+
+#back1 p{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#feedback p{
+    margin-bottom: 50px;
+}
+
+.scrollUp{
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(251, 251, 251, 0.5);
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    color: #d21927;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+@media (min-width: 360px) {
+    #logo_nav{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        background-position-x: 80%;
+        background-position-y: center;
+    }
+
+    h1 {
+        padding: 8vh 0 8vh 0;
+    }
+
+}
+
+@media (min-height: 481px) {
+    #iphone4{
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    header {
+        background-position-x: 75%;
+        background-position-y: center;
+    }
+}
+
+@media (max-width: 359px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    #iphone4{
+        padding-top: 20px;
+    }
+
+    #logo_nav {
+        padding-top: 30px;
+    }
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d21927;
+    border-color: #d21927;
+    font-family: 'Play', sans-serif;
+}
+
+.s span{
+    text-decoration: line-through;
+}

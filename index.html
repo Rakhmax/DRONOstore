@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Тестовая верстка">
+    <meta name="keywords" content="квадрокопет купить продажа квадрокоптеров">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DRONOstore</title>
+    <link rel="shortcut icon" href="img/logo_mini.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="container animated fadeIn" id="logo_nav">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12"><a href="index.html"><img src="img/logo.png" alt="logo" class=" img-responsive"></a></div>
+                <div class="col-sm-8 hidden-sm hidden-xs" style="padding-left: 100px">
+                    <ul class="list-inline" id="midnav">
+                        <li><a href="javascript://0" onclick="smoothScroll('#drones')" class="hvr-grow">КАТАЛОГ</a></li>
+                        <li><a href="javascript://0" onclick="smoothScroll('#warranty')" class="hvr-grow">ПРЕИМУЩЕСТВА</a></li>
+                        <li><a href="javascript://0" onclick="smoothScroll('#feedback')" class="hvr-grow">ОТЗЫВЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container animated fadeIn">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Добро пожаловать!</h1>
+                </div>
+                <div class="col-md-7">
+                    <h2>В нашем магазине вы можете купить квадрокоптер для любых целей по разумной цене.</h2>
+                    <p class="text-center z-depth-1-half" id="iphone4"><a href="#" class="btn btn-danger btn-lg">КУПИТЬ</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3><strong>ОСОБЕННОСТИ НАШИХ ДРОНОВ</strong></h3>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top: 30px">
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/battery.png" alt="">
+                    <p>Батареи дрона хватит <br> до 30 минут полета</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/camera-icon1.png" alt="">
+                    <p>Качество съемки вплоть <br> до 4К 60fps</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/smart.png" alt="">
+                    <p>Управление при помощи <br> смартфона</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="drones">
+        <div class="container">
+            <div class="row text-center s bot_om">
+                <div class="col-md-12"><h3>Классические дроны</h3></div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Parrot AR.DRONE 2.0</h4>
+                    <a href="#ardrone" data-toggle="modal"><img src="img/parrot.jpg" alt="ar_drone_2.0" class="img-responsive"></a>
+                    <span>18990 руб.</span>
+                    <p>15490 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Parrot AR.DRONE 2.0">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Xiaomi Mi Drone 1080P</h4>
+                    <a href="#midrone1080p" data-toggle="modal"><img src="img/midrone1080p.jpg" alt="mi_drone_1080p" class="img-responsive"></a>
+                    <span>37890 руб.</span>
+                    <p>31790 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Xiaomi Mi Drone 1080P">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Walkera QR X350 PRO</h4>
+                    <a href="#walkera" data-toggle="modal"><img src="img/walkera.jpg" alt="walkera_qr_x350_pro" class="img-responsive"></a>
+                    <span>41890руб.</span>
+                    <p>34890 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Walkera QR X350 PRO">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>DJI Phantom 3 Standard</h4>
+                    <a href="#phantom3" data-toggle="modal"><img src="img/phantom3.jpg" alt="phantom_3" class="img-responsive"></a>
+                    <span>45990 руб.</span>
+                    <p>39290 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="DJI Phantom 3 Standard">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="bonus" class="backs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3><strong style="color: #fcf5b9">АКЦИЯ:</strong> при покупке <strong>любого</strong> дрона<br> получите дополнительную
+                        батарею к нему <strong style="color: #fcf5b9">В ПОДАРОК!</strong></h3>
+                    <img style="margin:30px 0 50px 0;" src="img/extra_battery.jpg" alt="" class="img-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="container">
+            <div class="row text-center s bot_om" style="color: black">
+                <div class="col-md-12"><h3>Мини-дроны</h3></div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Parrot Airborne Cargo</h4>
+                    <a href="#airborne" data-toggle="modal"><img src="img/airborne.jpg" alt="" class="img-responsive"></a>
+                    <span>9990 руб.</span>
+                    <p>7990 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Parrot Airborne Cargo">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Zerotech DOBBY</h4>
+                    <a href="#dobby" data-toggle="modal"><img src="img/zerotech.jpg" alt="" class="img-responsive"></a>
+                    <span>25490 руб.</span>
+                    <p>21990 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Zerotech DOBBY">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Hover Camera Passport</h4>
+                    <a href="#hover" data-toggle="modal"><img src="img/hover.jpg" alt="" class="img-responsive"></a>
+                    <span>37690 руб.</span>
+                    <p>33990 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Hover Camera Passport">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>DJI Spark</h4>
+                    <a href="#spark" data-toggle="modal"><img src="img/spark.jpg" alt="" class="img-responsive"></a>
+                    <span>52990 руб.</span>
+                    <p>44990 руб.</p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="DJI Spark">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="backs" id="discount">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3><strong style="color: #fcf5b9">СКИДКА 7%</strong> по промокоду</h3>
+                    <p>Чтобы получить скидку, при оформлении заказа <br> укажите промокод <strong style="color: #fcf5b9; font-size: 24px">#OFF7</strong> в поле ввода промокодов.</p>
+                    <img style="margin:30px 0 50px 0" src="img/off7.png" alt="" class="img-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row text-center s bot_om" style="color: black">
+                    <div class="col-md-12"><h3>Дроны для профессионалов</h3></div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Xiaomi Mi Drone 4K</h4>
+                        <a href="#midrone" data-toggle="modal"><img src="img/midrone4k.jpg" alt="" class="img-responsive"></a>
+                        <span>53490 руб.</span>
+                        <p>47490 руб.</p>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Xiaomi Mi Drone 4K">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Yuneec Q500 Typhoon</h4>
+                        <a href="#yuneec" data-toggle="modal"><img src="img/yuneec.jpg" alt="" class="img-responsive"></a>
+                        <span>63990 руб.</span>
+                        <p>57990 руб.</p>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="Yuneec Q500 Typhoon">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>DJI Mavic PRO</h4>
+                        <a href="#mavic" data-toggle="modal"><img src="img/mavic.jpg" alt="" class="img-responsive"></a>
+                        <span>93590 руб.</span>
+                        <p>87990 руб.</p>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="DJI Mavic PRO">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>DJI Phantom 4 PRO</h4>
+                        <a href="#phantom4" data-toggle="modal"><img src="img/phantom4.jpg" alt="" class="img-responsive"></a>
+                        <span>130890 руб.</span>
+                        <p>119790 руб.</p>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="DJI Phantom 4 PRO">Купить &nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="warranty" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3><strong>НАШИ ПРЕИМУЩЕСТВА</strong></h3>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top: 30px">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/certificate.png" alt="">
+                    <p>Прямые поставки от производителей</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/delivery.png" alt="">
+                    <p>Бесплатная и быстрая доставка по всей России</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/prepaid.png" alt="">
+                    <p>Оплата при получении удобным для вас способом</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/wrench.png" alt="">
+                    <p>Гарантия<br>12 месяцев</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" style="background-color: #f5f5f5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center"><strong>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</strong></h3>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px">
+                <div class="col-md-7">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="img/male.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><strong>Владислав Лебедев</strong></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad architecto asperiores aut, eaque esse exercitationem expedita in, labore laboriosam modi quod rerum velit. Consequuntur fugiat maxime odio quo tenetur?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-5 col-md-7">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="img/male2.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><strong>Дмитрий Иванов</strong></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque consectetur distinctio dolore dolorem eos eveniet in inventore labore laudantium molestias optio, quas qui quos, repellendus unde, veniam. Libero, voluptatum?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="img/girl.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><strong>Валерия Каренина</strong></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in laboriosam nisi officia optio quo totam veniam. Ab, ex, facilis. Blanditiis consectetur ducimus harum labore officia reiciendis repudiandae, totam voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support" class="backs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3><strong style="color: #fcf5b9">ЕСТЬ ВОПРОСЫ?</strong> ЗАДАВАЙТЕ</h3>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Имя</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputName" placeholder="Иван">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-2 control-label">Почта</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage" class="col-sm-2 control-label">Сообщение</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" rows="3" id="inputMessage"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <button type="submit" class="btn btn-default">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #303030">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="policy.html">Политика конфиденциальности</a><br>
+                    <a href="https://vk.com/feed"><img src="img/vk.png" alt=""></a>
+                    <a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div>
+        <a href="javascript://0" onclick="smoothScroll('#logo_nav')" class="scrollUp">
+            <i class="glyphicon glyphicon-arrow-up" style="color: #d21927"></i>
+        </a>
+
+    </div>
+
+    <div class="modal fade" id="ardrone" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Parrot AR.Drone 2.0</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Parrot AR.Drone 2.0 спообен открыть для вас мир с высоты птичьего полета и мгновенно обмениваться фотографиями и видео в социальных сетях.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="midrone1080p" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Xiaomi Mi Drone 1080P</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Жизнь – это не только то, что окружает вас. Открывайте новые горизонты вместе с Mi Drone.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="walkera" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Walkera QR X350 PRO</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Квадрокоптер Walkera QR X350 PRO придется по душе всем любителям радиоуправляемых вертолетов независимо от наличия опыта управления.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="phantom3" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">DJI Phantom 3 Standard</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Наслаждайтесь острыми ощущениями полета вместе с Phantom 3.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="airborne" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">AirSelfie</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Parrot Airborne Cargo - надежный, ударопрочный мини-дрон, который готов к полету в любой момент.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="dobby" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Zerotech DOBBY</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Карманный дрон DOBBY с камерой высокой четкости выводит ваши селфи на новую высоту.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="hover" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Hover Camera Passport</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Hover Camera Passport - это не просто дрон, это ваш персональный самоуправляемый фотограф.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="spark" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">DJI Spark</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Встречайте Spark, мини-дрон, который включает в себя все технологии DJI и способен запечатлеть все,
+                    что вас вдохновляет.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="midrone" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Xiaomi Mi Drone 4K</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Жизнь – это не только то, что окружает вас. Открывайте новые горизонты вместе с Mi Drone.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="yuneec" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Yuneec Q500 Typhoon</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="mavic" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">DJI Mavic PRO</h4>
+                </div>
+                <div class="modal-body">
+                    <p>DJI Mavic Pro - это небольшой, но мощный дрон, который легко и без проблем превращает небо в ваш творческий холст, помогая вам сделать каждый момент воздушным.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="phantom4" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">DJI Phantom 4 PRO</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Полностью новый DJI Phantom с улучшенной камерой, большей батареей и умными функциями.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="control-label">Ваше имя:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Иван Иванов">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="control-label">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+79001234567">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="control-label">Адрес:</label>
+                            <input type="text" class="form-control" id="address" placeholder="г. Москва, ул. Красная, 1а">
+                        </div>
+                        <div class="form-group" id="dr_order">
+                            <label for="recipient-name" class="control-label">Модель дрона:</label>
+                            <input type="text" class="form-control" id="recipient-name" readonly>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Отказаться от звонка менеджера
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Комментарий:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-danger">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function smoothScroll(id) {
+            var offset = 0;
+            $('html, body').animate({
+                scrollTop: $(id).offset().top - offset
+            },500);
+            return false;
+        }
+    </script>
+</body>
+</html>
