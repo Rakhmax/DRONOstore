@@ -8,3 +8,44 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     modal.find('#dr_order input').val(recipient)
 });
 
+$(function () {
+    NProgress.start();
+    NProgress.set(0.3);
+});
+
+$(window).ready (function () {
+    NProgress.done();
+});
+
+
+function smoothScroll(id) {
+    var offset = 0;
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - offset
+    },500);
+    return false;
+}
+
+$('#myButton').on('click', function () {
+    var formValid = true;
+    //перебрать все элементы управления input
+    $('input').each(function() {
+        var formGroup = $(this).parents('.form1');
+        if (this.checkValidity()) {
+            formGroup.addClass('has-success').removeClass('has-error');
+        } else {
+            formGroup.addClass('has-error').removeClass('has-success');
+            formValid = false;
+        }
+    });
+    if (formValid) {
+        $('#exampleModal').modal('hide');
+        $('#tnx').modal('show');
+    }
+});
+
+$(function(){
+    $("#phone").mask("+7(999) 999-9999");
+});
+
+

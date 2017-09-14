@@ -10,9 +10,10 @@
     <title>DRONOstore</title>
     <link rel="shortcut icon" href="img/logo_mini.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nprogress.css">
     <link rel="stylesheet" href="css/hover-min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -30,7 +31,9 @@
                 <div class="col-sm-4 col-xs-12"><a href="index.html"><img src="img/logo.png" alt="logo" class=" img-responsive"></a></div>
                 <div class="col-sm-8 hidden-sm hidden-xs" style="padding-left: 100px">
                     <ul class="list-inline" id="midnav">
-                        <li><a href="javascript://0" onclick="smoothScroll('#drones')" class="hvr-grow">КАТАЛОГ</a></li>
+                        <li>
+                            <a href="javascript://0" onclick="smoothScroll('#drones')" class="hvr-grow" id="#item">КАТАЛОГ</a>
+                        </li>
                         <li><a href="javascript://0" onclick="smoothScroll('#warranty')" class="hvr-grow">ПРЕИМУЩЕСТВА</a></li>
                         <li><a href="javascript://0" onclick="smoothScroll('#feedback')" class="hvr-grow">ОТЗЫВЫ</a></li>
                     </ul>
@@ -57,7 +60,7 @@
                     <h3><strong>ОСОБЕННОСТИ НАШИХ ДРОНОВ</strong></h3>
                 </div>
             </div>
-            <div class="row text-center" style="margin-top: 30px">
+            <div class="row text-center text-pdn" style="margin-top: 30px">
                 <div class="col-md-4 col-sm-4">
                     <img src="img/battery.png" alt="">
                     <p>Батареи дрона хватит <br> до 30 минут полета</p>
@@ -208,7 +211,7 @@
                     <h3><strong>НАШИ ПРЕИМУЩЕСТВА</strong></h3>
                 </div>
             </div>
-            <div class="row text-center" style="margin-top: 30px">
+            <div class="row text-center text-pdn" style="margin-top: 30px">
                 <div class="col-md-3 col-sm-6">
                     <img src="img/certificate.png" alt="">
                     <p>Прямые поставки от производителей</p>
@@ -228,7 +231,7 @@
             </div>
         </div>
     </section>
-    <section id="feedback" style="background-color: #f5f5f5">
+    <section id="feedback" style="background-color: rgb(254,254,254)">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -245,7 +248,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>Владислав Лебедев</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad architecto asperiores aut, eaque esse exercitationem expedita in, labore laboriosam modi quod rerum velit. Consequuntur fugiat maxime odio quo tenetur?</p>
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварных рукописи языкового образ своего единственное даль маленькая дорогу, залетают снова мир, ее от всех страну переулка дороге, парадигматическая вдали подпоясал?</p>
                         </div>
                     </div>
                 </div>
@@ -262,7 +265,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>Дмитрий Иванов</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque consectetur distinctio dolore dolorem eos eveniet in inventore labore laudantium molestias optio, quas qui quos, repellendus unde, veniam. Libero, voluptatum?</p>
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но составитель скатился однажды запятых необходимыми сих дорогу заголовок языкового не грустный? Предупредила послушавшись текстов, лучше одна строчка приставка взобравшись.</p>
                         </div>
                     </div>
                 </div>
@@ -279,7 +282,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>Валерия Каренина</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in laboriosam nisi officia optio quo totam veniam. Ab, ex, facilis. Blanditiis consectetur ducimus harum labore officia reiciendis repudiandae, totam voluptate.</p>
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Пустился, большой подзаголовок щеке одна, единственное меня великий до, продолжил маленький свой даже? Мир предупредила знаках путь алфавит которой послушавшись?</p>
                         </div>
                     </div>
                 </div>
@@ -295,24 +298,24 @@
                         <div class="form-group">
                             <label for="inputName" class="col-sm-2 control-label">Имя</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputName" placeholder="Иван">
+                                <input type="text" class="form-control" id="inputName" placeholder="Иван" required="required">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail" class="col-sm-2 control-label">Почта</label>
                             <div class="col-sm-8">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com" required="required">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputMessage" class="col-sm-2 control-label">Сообщение</label>
                             <div class="col-sm-8">
-                                <textarea class="form-control" rows="3" id="inputMessage"></textarea>
+                                <textarea class="form-control" rows="3" id="inputMessage" required="required"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-8">
-                                <button type="submit" class="btn btn-default">Отправить</button>
+                                <a href="#help" data-toggle="modal" type="button" class="btn btn-default" id="helpButton">Отправить</a>
                             </div>
                         </div>
                     </form>
@@ -495,7 +498,7 @@
                     <h4 class="modal-title">Yuneec Q500 Typhoon</h4>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+                    <p>Лучшая 4К система по соотношению цена-качество поставляемая с пультом с сенсорным дисплеем на базе Android - не требует использования дополнительных мобильных устройств для съемки великолепных 4К видео.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
@@ -544,24 +547,24 @@
                     <h4 class="modal-title" id="exampleModalLabel">New message</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group">
+                    <form id="order">
+                        <div class="form-group form1">
                             <label for="name" class="control-label">Ваше имя:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Иван Иванов">
+                            <input type="text" class="form-control" id="name" placeholder="Иван Иванов" required="required">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form1">
                             <label for="phone" class="control-label">Телефон:</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="+79001234567">
+                            <input type="tel" class="form-control" id="phone" placeholder="+7(900) 123-4567" required="required">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form1">
                             <label for="email" class="control-label">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required="required">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form1">
                             <label for="address" class="control-label">Адрес:</label>
-                            <input type="text" class="form-control" id="address" placeholder="г. Москва, ул. Красная, 1а">
+                            <input type="text" class="form-control" id="address" placeholder="г. Москва, ул. Красная, 1а" required="required">
                         </div>
-                        <div class="form-group" id="dr_order">
+                        <div class="form-group form1" id="dr_order">
                             <label for="recipient-name" class="control-label">Модель дрона:</label>
                             <input type="text" class="form-control" id="recipient-name" readonly>
                         </div>
@@ -570,7 +573,7 @@
                                 <input type="checkbox"> Отказаться от звонка менеджера
                             </label>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form1">
                             <label for="message-text" class="control-label">Комментарий:</label>
                             <textarea class="form-control" id="message-text"></textarea>
                         </div>
@@ -578,7 +581,37 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-danger">Отправить</button>
+                    <a href="" data-toggle="modal" type="button" id="myButton" class="btn btn-danger" autocomplete="off">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tnx" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h4>Спасибо за заказ!</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="help" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Спасибо за обращение!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Ваш вопрос отправлен.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
                 </div>
             </div>
         </div>
@@ -587,16 +620,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-        function smoothScroll(id) {
-            var offset = 0;
-            $('html, body').animate({
-                scrollTop: $(id).offset().top - offset
-            },500);
-            return false;
-        }
-    </script>
+    <script src="js/nprogress.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

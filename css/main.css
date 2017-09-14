@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Play|Poiret+One');
 
+html{
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+body {
+    padding: 0 !important;
+}
+
 h1{
     padding: 50px 0 50px 0;
 }
@@ -179,3 +188,23 @@ A:link {
 .s span{
     text-decoration: line-through;
 }
+
+#nprogress .bar{
+    background: #d21927;
+}
+
+#nprogress .spinner-icon{
+    border-top-color: #d21927;
+    border-left-color: #c83e39;
+}
+
+#tnx {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-pdn p{
+    padding-top: 10px;
+}
+
