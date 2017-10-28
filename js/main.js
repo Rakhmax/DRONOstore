@@ -38,10 +38,14 @@ $('#myButton').on('click', function () {
             formValid = false;
         }
     });
-    if (formValid) {
-        $('#exampleModal').modal('hide');
-        $('#tnx').modal('show');
+    //$('#tnx').modal('show');
+    if (formValid == true) {
+        //$('#exampleModal').modal('hide');
+        $('#exampleModal').hide();
+        $('#tnx').show();
+
     }
+
 });
 
 $(function(){

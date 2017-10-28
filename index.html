@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/nprogress.css">
     <link rel="stylesheet" href="css/hover-min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -163,7 +163,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3><strong style="color: #fcf5b9">СКИДКА 7%</strong> по промокоду</h3>
-                    <p>Чтобы получить скидку, при оформлении заказа <br> укажите промокод <strong style="color: #fcf5b9; font-size: 24px">#OFF7</strong> в поле ввода промокодов.</p>
+                    <p>Чтобы получить скидку, при оформлении заказа <br> укажите промокод <strong style="color: #fcf5b9; font-size: 24px">#OFF7</strong></p>
                     <img style="margin:30px 0 50px 0" src="img/off7.png" alt="" class="img-circle">
                 </div>
             </div>
@@ -241,9 +241,9 @@
             <div class="row" style="margin-top: 30px">
                 <div class="col-md-7">
                     <div class="media">
-                        <div class="media-left media-middle">
+                        <div class="media-left media-top">
                             <a href="#">
-                                <img class="media-object" src="img/male.png" alt="...">
+                                <img class="media-object" style="border-radius: 50%" src="img/vlad-lebedev.jpg" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -258,14 +258,14 @@
             <div class="row">
                 <div class="col-md-offset-5 col-md-7">
                     <div class="media">
-                        <div class="media-left media-middle">
+                        <div class="media-left media-top">
                             <a href="#">
-                                <img class="media-object" src="img/male2.png" alt="...">
+                                <img class="media-object" style="border-radius: 50%" src="img/dim-ivanov.jpg" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>Дмитрий Иванов</strong></h4>
-                            <p>Доставка в срок, все хорошо упаковано, никаких вопрос по внешнему виду упаковки и товара.</p>
+                            <p>Доставка в срок, все хорошо упаковано, никаких вопросов по внешнему виду упаковки и товара.</p>
                         </div>
                     </div>
                 </div>
@@ -275,14 +275,14 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="media">
-                        <div class="media-left media-middle">
+                        <div class="media-left media-top">
                             <a href="#">
-                                <img class="media-object" src="img/girl.png" alt="...">
+                                <img class="media-object" style="border-radius: 50%" src="img/val-karenina.jpg" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>Валерия Каренина</strong></h4>
-                            <p>Заказ делала в интернет-магазине. Менеджер по продажам ответил на все интересующие вопросы исчерпывающе. Сравнили несколько товаров, менеджер помог сделать выбор.
+                            <p>Заказ делала в этом интернет-магазине. Менеджер по продажам ответил на все интересующие вопросы исчерпывающе. Сравнили несколько товаров, менеджер помог сделать выбор.
                                 Спасибо!</p>
                         </div>
                     </div>
@@ -574,6 +574,10 @@
                         <div class="form-group form1" id="dr_order">
                             <label for="recipient-name" class="control-label">Модель дрона:</label>
                             <input type="text" class="form-control" id="recipient-name" readonly>
+                        </div>
+                        <div class="form-group form1">
+                            <label for="promocode" class="control-label">Промокод:</label>
+                            <input type="text" class="form-control" id="promocode" placeholder="#promo" required="required" style="width: 45%">
                         </div>
                         <div class="checkbox">
                             <label>

@@ -139,12 +139,20 @@ A:link {
 
 @media (max-width: 767px) {
     header {
+
         background-position-x: 80%;
         background-position-y: center;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     h1 {
         padding: 8vh 0 8vh 0;
+    }
+    #arrowUp{
+        display: none;
     }
 
 }
@@ -162,7 +170,7 @@ A:link {
     }
 }
 
-@media (max-width: 359px) {
+@media (max-width: 500px) {
     h1{
         font-size: 30px;
     }
@@ -206,5 +214,15 @@ A:link {
 
 .text-pdn p{
     padding-top: 10px;
+}
+
+#socials{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#socials a{
+    padding: 1px;
 }
 
